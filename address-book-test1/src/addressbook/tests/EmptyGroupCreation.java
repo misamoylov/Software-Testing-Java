@@ -1,6 +1,5 @@
 package addressbook.tests;
 
-
 import org.testng.annotations.Test;
 
 public class EmptyGroupCreation extends TestBase {
@@ -10,7 +9,7 @@ public class EmptyGroupCreation extends TestBase {
 	gotoGroups();
     groupCreation();
 	fillGroupForm(new GroupData("","",""));
-    submitGroupCreation();
+    submitButton();
     returnToGroupPage();
   }
 

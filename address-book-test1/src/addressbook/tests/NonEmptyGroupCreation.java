@@ -13,7 +13,7 @@ public class NonEmptyGroupCreation extends TestBase {
     group.header = "header name 1";
     group.footer = "footer variable 1";
 	fillGroupForm(group);
-    submitGroupCreation();
+    submitButton();
     returnToGroupPage();
   }
 }
