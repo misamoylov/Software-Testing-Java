@@ -18,7 +18,7 @@ public class ContactData {
 	public ContactData() {
 		
 	}
-	public ContactData(String firstname, String lastname, String address11, String hometel, String mobitel, String worktel, String email, String secondemail, String birthday, String group, String birthmont, String birthyear, String secondphone, String secondaddress ) {
+	public ContactData(String firstname, String lastname, String address11, String hometel, String mobiletel, String worktel, String email, String secondemail, String birthday, String group, String birthmonth, String birthyear, String secondphone, String secondaddress ) {
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.address11 = address11;
