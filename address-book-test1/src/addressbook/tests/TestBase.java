@@ -6,11 +6,11 @@ import org.testng.annotations.BeforeTest;
 import adressbook.fw.ApplicationManager;
 public class TestBase {
 
-	protected ApplicationManager app;
+	protected static ApplicationManager app;
 
 	@BeforeTest
 	public void setUp() throws Exception {
-		app = new ApplicationManager(); 
+		 app = new ApplicationManager(); 
 
 	  }
 	
