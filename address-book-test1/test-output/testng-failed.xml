@@ -3,32 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="addressbook.tests.EmptyGroupCreation">
+      <class name="addressbook.tests.GroupRemovalTests">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- addressbook.tests.EmptyGroupCreation -->
-      <class name="addressbook.tests.NonEmptyGroupCreation">
-        <methods>
-          <include name="testNonEmptyGroupCreation"/>
-        </methods>
-      </class> <!-- addressbook.tests.NonEmptyGroupCreation -->
-      <class name="addressbook.tests.AddContact">
-        <methods>
-          <include name="testAddContact"/>
-        </methods>
-      </class> <!-- addressbook.tests.AddContact -->
-      <class name="addressbook.tests.GroupRemovalTests">
-        <methods>
-          <include name="deleteSomeGroup"/>
-        </methods>
       </class> <!-- addressbook.tests.GroupRemovalTests -->
-      <class name="addressbook.tests.GroupModificationTests">
-        <methods>
-          <include name="modifySomeGroup"/>
-        </methods>
-      </class> <!-- addressbook.tests.GroupModificationTests -->
       <class name="addressbook.tests.EmptyContactCreation">
         <methods>
           <include name="testAddEmptyContact"/>

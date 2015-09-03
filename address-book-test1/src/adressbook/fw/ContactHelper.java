@@ -31,15 +31,32 @@ public class ContactHelper extends HelperBase {
 	    type("work", contact.worktel);
 	    type("email", contact.email);
 	    type("email2", contact.secondemail);
-	    type("byear", contact.birthyear);
 	    selectByText(By.name("bday"), contact.birthday);
 	    selectByText(By.name("bmonth"), contact.birthmonth);
+	    type("byear", contact.birthyear);
 	    selectByText(By.name("new_group"), contact.group);
 	    type("phone2", contact.secondphone);
 	    type("address2", contact.secondaddress);
 	  
 	}
 
+	public void deleteContact(int index) {
+		selectContactByIndex(index);
+		click(By.xpath("(//input[@name='update'])[2]"));
+	}
 	
+	private void selectContactByIndex(int index) {
+		click(By.xpath("(//img[@alt='Edit'])[" + index + "]"));
+	}
+
+	public void initContactModification(int index) {
+		selectContactByIndex(index);
+		//click(By.name("edit"));
+	}
+
+	public void submitContactModification(int i) {
+		click(By.name("update"));
+		
+	}
 
 }
