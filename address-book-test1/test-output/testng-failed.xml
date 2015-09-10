@@ -9,11 +9,21 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- addressbook.tests.GroupRemovalTests -->
+      <class name="addressbook.tests.EmptyGroupCreation">
+        <methods>
+          <include name="testNonEmptyGroupCreation"/>
+        </methods>
+      </class> <!-- addressbook.tests.EmptyGroupCreation -->
       <class name="addressbook.tests.EmptyContactCreation">
         <methods>
           <include name="testAddEmptyContact"/>
         </methods>
       </class> <!-- addressbook.tests.EmptyContactCreation -->
+      <class name="addressbook.tests.ContactRemovalTest">
+        <methods>
+          <include name="deleteSomeContact"/>
+        </methods>
+      </class> <!-- addressbook.tests.ContactRemovalTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

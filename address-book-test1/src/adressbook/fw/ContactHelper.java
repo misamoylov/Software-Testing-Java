@@ -34,7 +34,7 @@ public class ContactHelper extends HelperBase {
 	    selectByText(By.name("bday"), contact.birthday);
 	    selectByText(By.name("bmonth"), contact.birthmonth);
 	    type("byear", contact.birthyear);
-	    selectByText(By.name("new_group"), contact.group);
+	    //selectByText(By.name("new_group"), contact.group);
 	    type("phone2", contact.secondphone);
 	    type("address2", contact.secondaddress);
 	  
@@ -47,6 +47,7 @@ public class ContactHelper extends HelperBase {
 	
 	private void selectContactByIndex(int index) {
 		click(By.xpath("(//img[@alt='Edit'])[" + index + "]"));
+		//click(By.xpath("//tr[@name='entry'][" + index + "]"));
 	}
 
 	public void initContactModification(int index) {
