@@ -1,67 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8618" started-at="2015-09-10T15:21:43Z" finished-at="2015-09-10T15:21:52Z">
+  <suite name="Default suite" duration-ms="4606" started-at="2015-09-19T15:45:17Z" finished-at="2015-09-19T15:45:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8618" started-at="2015-09-10T15:21:43Z" finished-at="2015-09-10T15:21:52Z">
-      <class name="addressbook.tests.ContactModificationTest">
-        <test-method status="PASS" signature="modifySomeContact()[pri:0, instance:addressbook.tests.ContactModificationTest@221abac1]" name="modifySomeContact" duration-ms="576" started-at="2015-09-10T18:21:47Z" finished-at="2015-09-10T18:21:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeContact -->
-      </class> <!-- addressbook.tests.ContactModificationTest -->
-      <class name="addressbook.tests.EmptyGroupCreation">
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:addressbook.tests.EmptyGroupCreation@7a67ab8f]" name="testNonEmptyGroupCreation" duration-ms="601" started-at="2015-09-10T18:21:51Z" finished-at="2015-09-10T18:21:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-      </class> <!-- addressbook.tests.EmptyGroupCreation -->
-      <class name="addressbook.tests.ContactRemovalTest">
-        <test-method status="PASS" signature="deleteSomeContact()[pri:0, instance:addressbook.tests.ContactRemovalTest@4969fb09]" name="deleteSomeContact" duration-ms="471" started-at="2015-09-10T18:21:51Z" finished-at="2015-09-10T18:21:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSomeContact -->
-      </class> <!-- addressbook.tests.ContactRemovalTest -->
-      <class name="addressbook.tests.EmptyContactCreation">
-        <test-method status="PASS" signature="testAddEmptyContact()[pri:0, instance:addressbook.tests.EmptyContactCreation@2c307811]" name="testAddEmptyContact" duration-ms="919" started-at="2015-09-10T18:21:50Z" finished-at="2015-09-10T18:21:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddEmptyContact -->
-      </class> <!-- addressbook.tests.EmptyContactCreation -->
-      <class name="addressbook.tests.NonEmptyGroupCreation">
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:addressbook.tests.NonEmptyGroupCreation@4ce03186]" name="testNonEmptyGroupCreation" duration-ms="676" started-at="2015-09-10T18:21:48Z" finished-at="2015-09-10T18:21:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-      </class> <!-- addressbook.tests.NonEmptyGroupCreation -->
-      <class name="addressbook.tests.AddContact">
-        <test-method status="PASS" signature="testAddContact()[pri:0, instance:addressbook.tests.AddContact@5b4bf56d]" name="testAddContact" duration-ms="1149" started-at="2015-09-10T18:21:49Z" finished-at="2015-09-10T18:21:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddContact -->
-      </class> <!-- addressbook.tests.AddContact -->
+    <test name="Default test" duration-ms="4606" started-at="2015-09-19T15:45:17Z" finished-at="2015-09-19T15:45:22Z">
       <class name="addressbook.tests.GroupModificationTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:addressbook.tests.GroupModificationTests@2b4b2d2d]" name="setUp" is-config="true" duration-ms="2527" started-at="2015-09-10T18:21:43Z" finished-at="2015-09-10T18:21:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:addressbook.tests.GroupModificationTests@169d6a08]" name="setUp" is-config="true" duration-ms="2653" started-at="2015-09-19T18:45:17Z" finished-at="2015-09-19T18:45:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="modifySomeGroup()[pri:0, instance:addressbook.tests.GroupModificationTests@2b4b2d2d]" name="modifySomeGroup" duration-ms="866" started-at="2015-09-10T18:21:46Z" finished-at="2015-09-10T18:21:47Z">
+        <test-method status="PASS" signature="modifySomeGroup()[pri:0, instance:addressbook.tests.GroupModificationTests@169d6a08]" name="modifySomeGroup" duration-ms="1624" started-at="2015-09-19T18:45:20Z" finished-at="2015-09-19T18:45:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeGroup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:addressbook.tests.GroupModificationTests@2b4b2d2d]" name="tearDown" is-config="true" duration-ms="319" started-at="2015-09-10T18:21:52Z" finished-at="2015-09-10T18:21:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:addressbook.tests.GroupModificationTests@169d6a08]" name="tearDown" is-config="true" duration-ms="319" started-at="2015-09-19T18:45:21Z" finished-at="2015-09-19T18:45:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- addressbook.tests.GroupModificationTests -->
-      <class name="addressbook.tests.GroupRemovalTests">
-        <test-method status="PASS" signature="deleteSomeGroup()[pri:0, instance:addressbook.tests.GroupRemovalTests@8dae665]" name="deleteSomeGroup" duration-ms="500" started-at="2015-09-10T18:21:47Z" finished-at="2015-09-10T18:21:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSomeGroup -->
-      </class> <!-- addressbook.tests.GroupRemovalTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
