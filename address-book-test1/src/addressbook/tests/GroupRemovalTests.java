@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 public class GroupRemovalTests extends TestBase{
 	@Test
 	public void deleteSomeGroup(){
@@ -11,13 +12,15 @@ public class GroupRemovalTests extends TestBase{
 		app.getNavigationHelper().gotoGroups();
 		// save old state
 		List<GroupData> oldList = app.getGroupHelper().getGroups();
+		Random rnd = new Random();
+		int index = rnd.nextInt(oldList.size()-1);
 		//actions
-		app.getGroupHelper().deleteGroup(0);
+		app.getGroupHelper().deleteGroup(index);
 		app.getGroupHelper().returnToGroupPage();
 		//save new state
 		List<GroupData> newList = app.getGroupHelper().getGroups();
 	    //compare states
-		oldList.remove(0);
+		oldList.remove(index);
 		Collections.sort(oldList);
 		assertEquals(newList, oldList);
 	}
