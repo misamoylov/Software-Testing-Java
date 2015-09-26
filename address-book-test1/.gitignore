@@ -1,2 +1,6 @@
 /bin/
 /test-output/
+.settings/**
+bin/**
+test-output/**
+.metadata/**

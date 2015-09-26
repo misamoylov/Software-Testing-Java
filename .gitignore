@@ -1,1 +1,5 @@
 /address-book-test1/test-output/
+.settings/**
+bin/**
+test-output/**
+.metadata/**

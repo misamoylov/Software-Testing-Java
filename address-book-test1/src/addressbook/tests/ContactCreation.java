@@ -54,11 +54,12 @@ public class ContactCreation extends TestBase {
 		app.getContactHelper().contactFormFilling(contact);
 	    app.getContactHelper().contactSubmitButton();
 	    app.getNavigationHelper().goToHomePage();
-	  //save new state
+	    //save new state
 	    List<ContactData> newList = app.getContactHelper().getContacts();
 	    //compare states
 	    oldList.add(contact);
 	    Collections.sort(oldList);
-	    //assertEquals(newList, oldList);
+	    Collections.sort(newList);
+	    assertEquals(newList, oldList);
 }
 }

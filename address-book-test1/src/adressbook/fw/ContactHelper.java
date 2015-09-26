@@ -57,24 +57,23 @@ public class ContactHelper extends HelperBase {
 
 	public void initContactModification(int index) {
 		selectContactByIndex(index);
-		//click(By.name("edit"));
 	}
 
-	public void submitContactModification(int i) {
+	public void submitContactModification() {
 		click(By.name("update"));
 		
 	}
-	public List<ContactData> getContacts(){
+	public List<ContactData> getContacts() {
 		List<ContactData> contacts = new ArrayList<ContactData>();
-		List<WebElement> checkboxes = driver.findElements(By.name("selected[]"));
-		for (WebElement checkbox : checkboxes)
-		{
+		int numberRows = driver.findElements(By.xpath("//tr[@name='entry']")).size();
+		for (int i = 0; i < numberRows; i++) {
 			ContactData contact = new ContactData();
-			String title = checkbox.getAttribute("title");
-			contact.firstname = title.substring("Select (".length(), title.length() - ")".length());
+			contact.firstname  = driver.findElement(By.xpath("//tr[@name='entry']["+(i+1)+"]/td[3]")).getText();
+			contact.lastname  =  driver.findElement(By.xpath("//tr[@name='entry']["+(i+1)+"]/td[2]")).getText();
 			contacts.add(contact);
 		}
 		return contacts;
-	}
+ 	}
+	
 
 }
